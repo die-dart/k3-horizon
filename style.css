@@ -679,6 +679,63 @@ body.dark-mode .partner-logo {
   /* Contrast with Hero */
 }
 
+/* Google Reviews Section (OLD - REMOVED) */
+/* #google-reviews { ... } */
+
+/* --- Client Reviews & Testimonials Section --- */
+#reviews-testimonials {
+  padding: 100px 0;
+  /* Clear visual separator */
+  background-color: var(--card-bg);
+  /* Use theme card bg or distinct section bg */
+  border-top: 1px solid var(--border-color);
+}
+
+.reviews-hero {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.reviews-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.reviews-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Dark Mode Adaptation */
+body.dark-mode #reviews-testimonials {
+  background-color: var(--bg-gradient-start);
+  /* Consistent with Top Bar/Hero */
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .reviews-title {
+  color: #f3f4f6;
+  /* Light text for dark mode */
+}
+
+body.dark-mode .reviews-subtitle {
+  color: #9ca3af;
+  /* Muted text for dark mode */
+}
+
+.elfsight-widget-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  min-height: 400px;
+}
+
 body.dark-mode .programs-section {
   background-color: var(--bg-gradient-start);
   /* Match dark theme */
