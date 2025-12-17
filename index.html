@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World | Premium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="he-logo2.png" alt="Horizon Expertindo Logo" class="nav-logo-img">
+                <span class="brand-text">Horizon Expertindo</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Layanan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Informasi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link btn-highlight">Tentang Kami</a>
+                </li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="icon-btn" aria-label="Toggle Dark Mode" id="theme-toggle">
+                    <!-- Sun Icon -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <a href="#" class="btn-primary">Masuk</a>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li><a href="#" class="mobile-nav-link">Layanan</a></li>
+            <li><a href="#" class="mobile-nav-link">Informasi</a></li>
+            <li><a href="#" class="mobile-nav-link">Tentang Kami</a></li>
+            <li><a href="#" class="mobile-nav-link btn-mobile-login">Masuk</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title fade-in-up">
+                Pusat Pelatihan & Sertifikasi K3
+            </h1>
+
+            <div class="hero-subtitles fade-in-up delay-1">
+                <h2 class="hero-subtitle-primary">
+                    Tingkatkan Kompetensi Tenaga Kerja Anda
+                </h2>
+                <div class="hero-subtitle-secondary">
+                    Sertifikasi Resmi Berstandar Nasional
+                    <span class="typewriter-wrapper">
+                        <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="hero-search-container fade-in-up delay-3">
+                <form class="hero-search-form" onsubmit="event.preventDefault();">
+                    <div class="search-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <input type="text" class="hero-search-input"
+                        placeholder="Cari pelatihan, sertifikasi, atau program..." aria-label="Search training">
+                    <button type="submit" class="hero-search-btn">Cari</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Particles (CSS only or JS enhanced) -->
+        <div class="particles"></div>
+    </header>
+
+    <!-- Featured Programs Section -->
+    <section class="programs-section" id="programs">
+        <div class="section-container">
+            <h2 class="section-title">Program Pelatihan Unggulan</h2>
+
+            <div class="tabs-container">
+                <button class="tab-btn active" data-tab="kemnaker">Kemnaker RI</button>
+                <button class="tab-btn" data-tab="bnsp">BNSP</button>
+                <button class="tab-btn" data-tab="migas">Migas</button>
+                <button class="tab-btn" data-tab="softskill">Soft Skill</button>
+            </div>
+
+            <!-- Tab Content: Kemnaker RI -->
+            <div class="tab-content active" id="kemnaker">
+                <div class="programs-grid">
+                    <!-- Card 1 -->
+                    <div class="program-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://placehold.co/600x400/0052cc/ffffff?text=K3+Umum" alt="Ahli K3 Umum"
+                                class="card-img">
+                            <span class="card-tag">Online Training</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Ahli K3 Umum</h3>
+                            <p>Sertifikasi resmi Kemnaker RI untuk calon Ahli K3 di perusahaan.</p>
+                            <a href="#" class="card-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="program-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://placehold.co/600x400/0052cc/ffffff?text=K3+Listrik" alt="K3 Listrik"
+                                class="card-img">
+                            <span class="card-tag">Blended</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Ahli K3 Listrik</h3>
+                            <p>Kompetensi pengawasan instalasi listrik sesuai standar K3.</p>
+                            <a href="#" class="card-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="program-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://placehold.co/600x400/0052cc/ffffff?text=K3+Konstruksi" alt="K3 Konstruksi"
+                                class="card-img">
+                            <span class="card-tag">Offline</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Ahli K3 Konstruksi</h3>
+                            <p>Sertifikasi K3 khusus sektor konstruksi dan bangunan.</p>
+                            <a href="#" class="card-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="program-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://placehold.co/600x400/0052cc/ffffff?text=Kebakaran" alt="K3 Kebakaran"
+                                class="card-img">
+                            <span class="card-tag">Online Training</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>K3 Penanggulangan Kebakaran</h3>
+                            <p>Pelatihan teknis pencegahan dan penanggulangan kebakaran.</p>
+                            <a href="#" class="card-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: BNSP -->
+            <div class="tab-content" id="bnsp">
+                <div class="programs-grid">
+                    <!-- Card 1 -->
+                    <div class="program-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://placehold.co/600x400/2980b9/ffffff?text=TOT" alt="TOT Level 4"
+                                class="card-img">
+                            <span class="card-tag">Sertifikasi BNSP</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Training of Trainer (TOT)</h3>
+                            <p>Sertifikasi kompetensi bagi instruktur pelatihan profesional.</p>
+                            <a href="#" class="card-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="program-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://placehold.co/600x400/2980b9/ffffff?text=HR+Manager" alt="HR Manager"
+                                class="card-img">
+                            <span class="card-tag">Sertifikasi BNSP</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Human Capital Manager</h3>
+                            <p>Sertifikasi untuk manajer SDM berbasis kompetensi.</p>
+                            <a href="#" class="card-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Migas -->
+            <div class="tab-content" id="migas">
+                <div class="programs-grid">
+                    <!-- Card 1 -->
+                    <div class="program-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://placehold.co/600x400/e67e22/ffffff?text=Operator+Kran" alt="Operator Kran"
+                                class="card-img">
+                            <span class="card-tag">Sertifikasi Migas</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Operator Pesawat Angkat</h3>
+                            <p>Sertifikasi kompetensi untuk operator crane di industri migas.</p>
+                            <a href="#" class="card-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="program-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://placehold.co/600x400/e67e22/ffffff?text=Petugas+K3" alt="Petugas K3 Migas"
+                                class="card-img">
+                            <span class="card-tag">Sertifikasi Migas</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Petugas K3 Migas</h3>
+                            <p>Kompetensi pengawasan keselamatan kerja di sektor migas.</p>
+                            <a href="#" class="card-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Soft Skill -->
+            <div class="tab-content" id="softskill">
+                <div class="programs-grid">
+                    <!-- Card 1 -->
+                    <div class="program-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://placehold.co/600x400/27ae60/ffffff?text=Leadership" alt="Leadership"
+                                class="card-img">
+                            <span class="card-tag">Workshop</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Effective Leadership</h3>
+                            <p>Membangun jiwa kepemimpinan yang efektif dan adaptif.</p>
+                            <a href="#" class="card-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="program-card">
+                        <div class="card-image-wrapper">
+                            <img src="https://placehold.co/600x400/27ae60/ffffff?text=Communication" alt="Communication"
+                                class="card-img">
+                            <span class="card-tag">Workshop</span>
+                        </div>
+                        <div class="card-body">
+                            <h3>Business Communication</h3>
+                            <p>Teknik komunikasi bisnis yang profesional dan persuasif.</p>
+                            <a href="#" class="card-btn">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client & Partner Showcase -->
+    <section class="clients-section">
+        <div class="section-container">
+            <h2 class="section-title">Klien dan Mitra Loyal</h2>
+
+            <div class="marquee-wrapper">
+                <!-- Row 1: Slow -->
+                <div class="marquee-row slow">
+                    <div class="marquee-content">
+                        <!-- Set 1 -->
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <!-- Set 2 (Duplicate for loop) -->
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                    </div>
+                </div>
+
+                <!-- Row 2: Fast / Opposite -->
+                <div class="marquee-row fast reverse">
+                    <div class="marquee-content">
+                        <!-- Set 1 -->
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <!-- Set 2 -->
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                    </div>
+                </div>
+
+                <!-- Row 3: Slow -->
+                <div class="marquee-row slow">
+                    <div class="marquee-content">
+                        <!-- Set 1 -->
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <!-- Set 2 -->
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                        <img src="op.png" alt="Partner Logo" class="partner-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
+```
