@@ -110,6 +110,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .nav-logo-img {
@@ -970,6 +971,27 @@ body.dark-mode .reviews-subtitle {
   text-align: center;
 }
 
+/* Instagram Section */
+dark-mode .instagram-section {
+  padding: 80px 1.5rem;
+  background-color: #334155;
+  text-align: center;
+}
+
+dark-mode .instagram-section .section-title {
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* Google Maps Section */
+dark-mode.location-section {
+  padding: 80px 1.5rem;
+  background-color: #a9b6c8;
+  text-align: center;
+}
+
+
+
 /* Responsive for About Page */
 @media (max-width: 768px) {
   .profile-grid {
@@ -985,6 +1007,15 @@ body.dark-mode .reviews-subtitle {
 
   .section-heading {
     font-size: 2rem;
+  }
+
+  .instagram-section {
+    padding: 60px 1rem;
+  }
+
+  .instagram-section .section-title {
+    margin-bottom: 30px;
+    font-size: 1.75rem;
   }
 }
 
@@ -1222,6 +1253,7 @@ body.dark-mode .program-card {
   color: white;
   margin-bottom: 0.5rem;
   letter-spacing: -0.02em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .copyright-text {
