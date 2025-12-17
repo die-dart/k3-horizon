@@ -138,6 +138,69 @@ body {
   color: var(--nav-text-hover);
 }
 
+.nav-item {
+  position: relative;
+  /* Needed for absolute dropdown positioning */
+}
+
+/* Dropdown Menu Styles */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  list-style: none;
+  background-color: var(--nav-bg-glass);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--nav-border);
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+  /* Transition setup */
+  opacity: 0;
+  transform: translateY(10px);
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1010;
+  /* Above navbar content and widgets */
+}
+
+.nav-item:hover .dropdown-menu,
+.nav-item:focus-within .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: var(--nav-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.dropdown-item:hover {
+  background-color: rgba(125, 211, 252, 0.1);
+  color: var(--accent-color);
+}
+
+/* Chevron Icon */
+.chevron-icon {
+  font-size: 0.8em;
+  margin-left: 0.25rem;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.nav-item:hover .chevron-icon {
+  transform: rotate(180deg);
+}
+
 /* "Tentang Kami" Highlight Style */
 .nav-link.btn-highlight {
   padding: 0.5rem 1.25rem;
